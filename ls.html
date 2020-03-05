@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style>
+        .container {
+            display: flex;
+            justify-content: space-between;
+            width: 700px;
+            margin: 0 auto;
+        }
+
+        .column {
+            width: 200px;
+            height: 200px;
+            border: 1px solid black;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .red {
+            background-color: red;
+        }
+
+        .green {
+            background-color: green;
+        }
+
+        .blue {
+            background-color: blue;
+        }
+
+        .pick {
+            display: flex;
+        }
+
+        .box {
+            width: 150px;
+            height: 150px;
+        }
+
+        .light {
+            background-color: rgb(227, 224, 224);
+        }
+
+        .dark {
+            background-color: rgb(120, 118, 118);
+        }
+    </style>
+</head>
+<body>
+    <h1>Theme picker</h1>
+
+    <div class="container">
+        <div class="column red">
+            <button id="Red">Red</button>
+        </div>
+        <div class="column green">
+            <button id="Green">Green</button>
+        </div>
+        <div class="column blue">
+            <button id="Blue">Blue</button>
+        </div>
+    </div>
+
+    <ul>
+        <li>Set/Get 'theme' (light or dark) picker</li>
+        <li>Set/Get 'user' object</li>
+        <li>Set/Get 'hobbies' list</li>
+    </ul>
+
+    <div class="pick">
+        <div class="box light">
+            <button id="Light">light</button>
+        </div>
+        <div class="box dark">
+            <button id="Dark">dark</button>
+        </div>
+    </div>
+
+    <div class="user">
+        <input type="text" name="" id="Name" placeholder="name">
+        <input type="text" name="" id="Age" placeholder="age">
+        <input type="button" value="submit" class="submit">
+    </div>
+
+    <div class="hobby">
+        <input type="text" name="" id="Hobby1" placeholder="hobby">
+        <input type="text" name="" id="Hobby2" placeholder="hobby">
+        <input type="text" name="" id="Hobby3" placeholder="hobby">
+
+        <input type="button" value="submit" class="submit__hobby">
+    </div>
+
+    <script src="./js/ls.js"></script>
+    <script src="./js/tasks.js"></script>
+</body>
+</html>
